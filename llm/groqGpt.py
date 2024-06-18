@@ -36,7 +36,7 @@ class GroqLlama():
         self.gptAltAddress = (os.environ.get("ALT_GPT_URL", None) if altUrl is None
                         else altUrl)
         # self.gptKey = os.environ.get("Groq_API_KEY", None)
-        self.gptKey = "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"
+        self.gptKey = "Enter api key"
 
         self.canAccessGpt = canAccessGpt
         

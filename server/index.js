@@ -31,7 +31,7 @@ io.on("connection", (socket) => {
 
         pythonProcess.stdout.on('data', (output) => {
             const llm_response = output.toString().trim();
-            socket.broadcast.emit("recieve_message", {message: llm_response})
+            socket.emit("recieve_message", {message: llm_response})
         });
         
     } )
